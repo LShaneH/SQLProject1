@@ -1,2 +1,2 @@
 # SQLProject1
-May Day Superstore Project
+This contains initial SQL queries for my first project.
