@@ -1,0 +1,21 @@
+#This SQL Challenges introduces the use of AND/OR statements
+
+#List all bank product names from bank database
+
+Select product_name
+From bank_products;
+
+#Show all product names that have a Checking OR Savings product type
+
+Select product_name
+From bank_products
+Where product_type="Checking"
+Or product_type="Savings";
+
+#Show all product names that are a Savings type AND that have an interest rate of at least 0.75 AND have no monthly fee. Include both the product name and the Interest rate in the SELECT statement.
+
+Select product_name,interest_rate
+From bank_products
+Where product_type="Savings"
+AND interest_rate>=0.75
+AND monthly_fee=0;
